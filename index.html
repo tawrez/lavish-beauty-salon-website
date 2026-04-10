@@ -12,19 +12,18 @@
 
   <style>
     :root {
-      --bg: #160d09;
-      --bg-soft: #1f130d;
-      --surface: #2b1810;
-      --surface-2: #3a2114;
-      --surface-3: #4a2816;
-      --border: rgba(255, 207, 150, 0.35);
-      --text: #fbead6;
-      --muted: #e2c7aa;
-      --faint: #c9a882;
-      --gold: #f4c37a;
-      --gold-deep: #d99a42;
-      --gold-soft: rgba(244, 195, 122, 0.2);
-      --shadow: 0 24px 70px rgba(0, 0, 0, 0.7);
+      --bg: #050505;
+      --bg-soft: #101010;
+      --surface: #111111;
+      --surface-2: #181818;
+      --border: rgba(255, 215, 0, 0.32);
+      --text: #fdfdfd;
+      --muted: #d7d7d7;
+      --faint: #9f9f9f;
+      --gold: #ffd700;
+      --gold-deep: #d4af37;
+      --gold-soft: rgba(255, 215, 0, 0.16);
+      --shadow: 0 24px 70px rgba(0, 0, 0, 0.8);
       --whatsapp: #25D366;
     }
 
@@ -36,9 +35,9 @@
       font-size: 16px;
       line-height: 1.6;
       background:
-        radial-gradient(circle at 5% 0%, rgba(244,195,122,0.26), transparent 55%),
-        radial-gradient(circle at 85% 0%, rgba(244,195,122,0.14), transparent 55%),
-        linear-gradient(180deg, #160d09 0%, #1b100b 45%, #120a07 100%);
+        radial-gradient(circle at 10% 0%, rgba(255,215,0,0.16), transparent 55%),
+        radial-gradient(circle at 90% 0%, rgba(255,215,0,0.09), transparent 55%),
+        linear-gradient(180deg, #050505 0%, #050505 40%, #000000 100%);
       color: var(--text);
       scroll-behavior: smooth;
     }
@@ -62,9 +61,9 @@
       position: sticky;
       top: 0;
       z-index: 50;
-      background: rgba(10,4,2,.95);
-      backdrop-filter: blur(18px);
-      border-bottom: 1px solid rgba(255,207,150,.25);
+      background: rgba(0,0,0,.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255,215,0,.25);
     }
 
     .nav {
@@ -85,13 +84,14 @@
       width: 44px;
       height: 44px;
       border-radius: 50%;
-      background: radial-gradient(circle at 30% 20%,rgba(244,195,122,.38),transparent 60%);
+      background: radial-gradient(circle at 30% 20%,rgba(255,215,0,.45),transparent 60%);
       border: 1px solid var(--border);
       display: grid;
       place-items: center;
       overflow: hidden;
     }
 
+    /* put lavish-symbol1.jpg next to this HTML file */
     .brand-img {
       width: 100%;
       height: 100%;
@@ -150,13 +150,13 @@
       inset: 0 0 auto auto;
       width: 100%;
       max-width: 270px;
-      background: rgba(22,8,4,.98);
+      background: #050505;
       box-shadow: var(--shadow);
       transform: translateX(100%);
       transition: .3s ease;
       z-index: 45;
       padding: 1.7rem 1.5rem;
-      border-left: 1px solid rgba(255,207,150,.25);
+      border-left: 1px solid rgba(255,215,0,.25);
     }
 
     .mobile-menu.open { transform: translateX(0); }
@@ -164,7 +164,7 @@
     .mobile-menu a {
       display: block;
       padding: .65rem 0;
-      border-bottom: 1px solid rgba(255,207,150,.12);
+      border-bottom: 1px solid rgba(255,215,0,.12);
       font-size: .95rem;
       color: var(--text);
     }
@@ -197,7 +197,7 @@
       height: 6px;
       border-radius: 50%;
       background: var(--gold);
-      box-shadow: 0 0 14px rgba(244,195,122,.9);
+      box-shadow: 0 0 14px rgba(255,215,0,.9);
     }
 
     .btn {
@@ -216,9 +216,9 @@
     }
 
     .btn-primary {
-      background: linear-gradient(180deg,#f7ce86,#d99a42);
-      color: #2b1810;
-      box-shadow: 0 12px 30px rgba(0,0,0,.6);
+      background: linear-gradient(180deg,#fffbe5,#ffd700);
+      color: #111111;
+      box-shadow: 0 12px 30px rgba(0,0,0,.7);
     }
 
     .btn-secondary {
@@ -230,12 +230,12 @@
     .btn-whatsapp {
       background: var(--whatsapp);
       color: #041b0b;
-      box-shadow: 0 10px 24px rgba(0,0,0,.55);
+      box-shadow: 0 10px 24px rgba(0,0,0,.7);
     }
 
     .btn:hover {
       transform: translateY(-2px);
-      box-shadow: 0 16px 40px rgba(0,0,0,.75);
+      box-shadow: 0 16px 40px rgba(0,0,0,.9);
     }
 
     /* HERO */
@@ -264,14 +264,14 @@
     }
 
     .hero-note {
-      margin-top: 1.25rem;
-      font-size: .85rem;
+      margin-top: 1.1rem;
+      font-size: .86rem;
       color: var(--faint);
     }
 
     .hero-side {
-      border-radius: 1.5rem;
-      background: radial-gradient(circle at 0 0, rgba(244,195,122,.18), transparent 55%), linear-gradient(180deg,rgba(43,24,16,.96),rgba(20,10,6,.98));
+      border-radius: 1.4rem;
+      background: radial-gradient(circle at 0 0, rgba(255,215,0,.18), transparent 55%), var(--surface-2);
       border: 1px solid var(--border);
       padding: 1.4rem;
       box-shadow: var(--shadow);
@@ -315,10 +315,10 @@
 
     .card {
       background: var(--surface);
-      border-radius: 1.3rem;
+      border-radius: 1.2rem;
       border: 1px solid var(--border);
       padding: 1.25rem;
-      box-shadow: 0 18px 45px rgba(0,0,0,.7);
+      box-shadow: 0 18px 45px rgba(0,0,0,.85);
     }
 
     .cards-grid {
@@ -338,8 +338,8 @@
       right: 0;
       bottom: 0;
       z-index: 60;
-      background: rgba(10,4,2,.96);
-      border-top: 1px solid rgba(255,207,150,.25);
+      background: rgba(0,0,0,.96);
+      border-top: 1px solid rgba(255,215,0,.25);
       padding: .6rem .75rem;
     }
 
@@ -353,7 +353,7 @@
     @media (min-width: 768px) { .sticky-bar { display: none; } }
 
     footer {
-      border-top: 1px solid rgba(255,207,150,.25);
+      border-top: 1px solid rgba(255,215,0,.25);
       padding: 1.6rem 0 2.4rem;
       margin-top: 3rem;
       font-size: .85rem;
@@ -367,8 +367,8 @@
   <header class="site-header">
     <div class="container nav">
       <div class="brand">
-        <!-- keep lavish-symbol1.jpg next to this HTML file -->
         <div class="brand-logo">
+          <!-- make sure lavish-symbol1.jpg is in same folder -->
           <img src="lavish-symbol1.jpg" alt="Lavish Beauty logo" class="brand-img" />
         </div>
         <div class="brand-text">
@@ -406,17 +406,17 @@
       <div class="container hero-inner">
         <div>
           <span class="badge">Jayanagar • Bengaluru</span>
-          <h1>Luxury Hair, Beauty & Makeup in Jayanagar</h1>
+          <h1>Gold‑standard Hair, Beauty & Makeup</h1>
           <p class="hero-sub">
-            Lavish Hair Beauty Unisex Salon and Makeup Academy offers premium hair, nails, skin and bridal services –
-            plus a focused 10‑day Professional Makeup & Hair Masterclass for aspiring artists.
+            Lavish Hair Beauty Unisex Salon and Makeup Academy brings a luxury black‑and‑gold experience to
+            Jayanagar – from everyday hair to full bridal glam and a focused 10‑day professional masterclass.
           </p>
           <div class="hero-actions">
             <a href="#book" class="btn btn-primary">Book Salon Appointment</a>
             <a href="#academy" class="btn btn-secondary">Enquire About Makeup Course</a>
           </div>
           <p class="hero-note">
-            Both actions open WhatsApp directly with a pre‑filled message, so clients can confirm their slot in seconds.
+            One‑tap WhatsApp booking. No forms, no friction – just send the in‑built message and we confirm your slot.
           </p>
         </div>
 
@@ -445,10 +445,9 @@
       <div class="container">
         <div class="section-head">
           <span class="badge">Salon services</span>
-          <h2>Everything you need under one roof</h2>
+          <h2>Hair, nails, skin and bridal under one roof</h2>
           <p>
-            From quick touch‑ups to full bridal transformations, Lavish offers a complete menu so you can step out
-            photo‑ready for every occasion.
+            Every service is delivered with clean black‑and‑gold aesthetics, premium products and a calm, friendly vibe.
           </p>
         </div>
 
@@ -456,15 +455,15 @@
           <div class="card">
             <h3>Hair</h3>
             <p>
-              Haircuts, styling, blow dry, shampoo & conditioning, balayage, global and fashion colouring, root
-              touch‑ups and extensions – tailored to your face shape, routine and event.
+              Haircuts, styling, blow dry, shampoo & conditioning, balayage, global and fashion colouring,
+              root touch‑ups and extensions tailored to your face shape and occasion.
             </p>
           </div>
           <div class="card">
             <h3>Nails</h3>
             <p>
-              Classic manicure and pedicure, gel polish, acrylic and extension nails with neat cuticle work and
-              glossy, long‑wear finishes that photograph beautifully.
+              Manicure and pedicure, gel polish, acrylic and extension nails with neat cuticle work and glossy,
+              long‑wear finishes that look crisp in photos and real life.
             </p>
           </div>
           <div class="card">
@@ -477,15 +476,15 @@
           <div class="card">
             <h3>Brows & Lashes</h3>
             <p>
-              Eyebrow threading, shaping and lamination plus lash enhancement and extensions for soft, camera‑ready
-              definition without harsh lines.
+              Eyebrow threading, shaping and lamination plus lash enhancement and extensions for soft,
+              camera‑ready definition without harsh lines.
             </p>
           </div>
           <div class="card">
             <h3>Bridal & Events</h3>
             <p>
-              Trial and wedding‑day looks, sangeet and reception glam, hair styling, draping and touch‑up kits, so you
-              stay flawless from pheras to reception.
+              Trial and wedding‑day looks, sangeet and reception glam, hair styling, draping and touch‑up kits –
+              so you stay flawless from pheras to reception.
             </p>
           </div>
         </div>
@@ -497,10 +496,10 @@
       <div class="container">
         <div class="section-head">
           <span class="badge">Makeup academy</span>
-          <h2>Professional Makeup & Hair Masterclass</h2>
+          <h2>10‑Day Professional Makeup & Hair Masterclass</h2>
           <p>
-            10 days of hands‑on bridal and glam training with live models in Jayanagar, Bengaluru – perfect if you
-            want to start taking paid bridal bookings quickly.
+            Hands‑on bridal and glam training with live models in Jayanagar – perfect for artists who want to start
+            taking paid bridal bookings quickly.
           </p>
         </div>
 
@@ -512,20 +511,19 @@
               hair‑do basics, client consultation and hygiene.
             </p>
             <p style="margin-top:.7rem;">
-              Practice happens on live models, with guidance on how to pose your work for Instagram and how to speak
-              confidently with brides and families.
+              Practice on live models, guidance on posing your work, shooting content and managing timing on real wedding days.
             </p>
           </div>
           <div class="card">
             <h3>Offer & outcome</h3>
             <p>Actual Course Fee: <s>₹60,000</s></p>
-            <p style="font-size:1.7rem;font-family:'Playfair Display',serif;color:var(--gold-deep);margin:.2rem 0;">
+            <p style="font-size:1.7rem;font-family:'Playfair Display',serif;color:var(--gold);margin:.2rem 0;">
               Limited‑Time 50% OFF – Now Only ₹30,000
             </p>
             <p>Learn skills that can earn back the fee in just 1–2 bridal bookings.</p>
             <p style="margin-top:.7rem;">
-              Certificate on completion, one‑to‑one guidance and a portfolio / photoshoot on the final day so you have
-              content ready to post.
+              Certificate on completion, one‑to‑one guidance and a portfolio / photoshoot on the final day so you
+              have content ready to post.
             </p>
             <div style="margin-top:1rem;">
               <a
@@ -546,40 +544,39 @@
       <div class="container">
         <div class="section-head">
           <span class="badge">Why clients love us</span>
-          <h2>Warm, professional & detail‑obsessed</h2>
+          <h2>Black‑and‑gold luxury, warm service</h2>
           <p>
-            Lavish keeps the vibe friendly and relaxed while maintaining the hygiene, products and finishing you
-            expect from a premium Jayanagar salon and academy.
+            Lavish combines a sleek black‑and‑white aesthetic with soft behaviour, patience and detail‑obsessed artistry.
           </p>
         </div>
 
         <div class="cards-grid cards-grid--2">
           <div class="card">
-            <h3>Expert, patient team</h3>
+            <h3>Professional, patient team</h3>
             <p>
-              Stylists and artists who listen first, explain options clearly and help you choose looks that suit your
-              features, outfit and comfort level.
+              Artists who listen first, explain options clearly and help you choose looks that suit your features,
+              outfits and comfort level.
             </p>
           </div>
           <div class="card">
-            <h3>Premium, skin‑friendly products</h3>
+            <h3>Premium, safe products</h3>
             <p>
-              Trusted professional brands so colour lasts longer, skin feels comfortable and makeup looks fresh in
-              real life and in flash photos.
+              Trusted professional brands so colour lasts longer, skin feels comfortable and makeup looks fresh
+              under studio lights and phone flash.
             </p>
           </div>
           <div class="card">
-            <h3>Up‑to‑date techniques</h3>
+            <h3>Updated techniques</h3>
             <p>
-              Soft‑glam bridal looks, modern base techniques, trending nail and brow styles – updated regularly
-              through training and practice.
+              Soft‑glam, skin‑finish bases, trending eye looks, structured yet soft hairstyles and nails
+              that match current bridal trends.
             </p>
           </div>
           <div class="card">
-            <h3>Relaxing atmosphere</h3>
+            <h3>Calm, clean atmosphere</h3>
             <p>
-              Cosy setup, beverages, Wi‑Fi and a calm, non‑rushed experience so your self‑care time actually feels
-              like a break from the day.
+              Clean black‑and‑gold interiors, organised workstations, sanitised tools and a non‑rushed feel
+              so your appointment becomes actual self‑care time.
             </p>
           </div>
         </div>
@@ -587,7 +584,7 @@
         <div class="section-head" style="margin-top:3rem;">
           <span class="badge">Client words</span>
           <h2>Loved by Jayanagar clients</h2>
-          <p>Replace these with your Google reviews whenever you’re ready.</p>
+          <p>Swap these with your actual Google reviews whenever you’re ready.</p>
         </div>
 
         <div class="cards-grid cards-grid--3">
@@ -612,29 +609,6 @@
               to bring family and kids here.”
             </p>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- GALLERY PLACEHOLDER -->
-    <section class="section" id="gallery">
-      <div class="container">
-        <div class="section-head">
-          <span class="badge">Gallery</span>
-          <h2>Visual proof of our work</h2>
-          <p>Add your own bridal, hair colour, nails and academy photos here for instant trust.</p>
-        </div>
-
-        <div class="cards-grid cards-grid--3">
-          <div class="card" style="border-style:dashed;text-align:center;color:var(--faint);">
-            Upload bridal makeup photos here
-          </div>
-          <div class="card" style="border-style:dashed;text-align:center;color:var(--faint);">
-            Upload hair colour / balayage photos here
-          </div>
-          <div class="card" style="border-style:dashed;text-align:center;color:var(--faint);">
-            Upload nail extension photos here
-          </div>
         </div>
       </div>
     </section>
@@ -664,7 +638,7 @@
         <div class="section-head">
           <span class="badge">Contact</span>
           <h2>Visit or message Lavish Beauty</h2>
-          <p>Located in the heart of Jayanagar with easy access and paid street parking nearby.</p>
+          <p>Located in the heart of Jayanagar with convenient access and paid street parking nearby.</p>
         </div>
 
         <div class="cards-grid cards-grid--2">
@@ -685,8 +659,8 @@
           </div>
           <div class="card">
             <h3>Find us on Google Maps</h3>
-            <p style="margin-bottom:.7rem;">Embed your exact Google Maps iframe here:</p>
-            <div style="border-radius:1.1rem;overflow:hidden;border:1px solid var(--border);min-height:260px;background:#1b100b;display:grid;place-items:center;color:var(--faint);font-size:.85rem;">
+            <p style="margin-bottom:.7rem;">Paste your real Google Maps iframe here later:</p>
+            <div style="border-radius:1rem;overflow:hidden;border:1px solid var(--border);min-height:260px;background:#000;display:grid;place-items:center;color:var(--faint);font-size:.85rem;">
               Google Maps embed placeholder
             </div>
           </div>
