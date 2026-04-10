@@ -81,17 +81,16 @@
     }
 
     .brand-logo {
-      width: 44px;
-      height: 44px;
+      width: 46px;
+      height: 46px;
       border-radius: 50%;
-      background: radial-gradient(circle at 30% 20%,rgba(255,215,0,.45),transparent 60%);
+      background: radial-gradient(circle at 30% 20%,rgba(255,215,0,.4),transparent 60%);
       border: 1px solid var(--border);
       display: grid;
       place-items: center;
       overflow: hidden;
     }
 
-    /* put lavish-symbol1.jpg next to this HTML file */
     .brand-img {
       width: 100%;
       height: 100%;
@@ -368,8 +367,12 @@
     <div class="container nav">
       <div class="brand">
         <div class="brand-logo">
-          <!-- make sure lavish-symbol1.jpg is in same folder -->
-          <img src="lavish-symbol1.jpg" alt="Lavish Beauty logo" class="brand-img" />
+          <!-- logo embedded as base64, no separate file needed -->
+          <img
+            class="brand-img"
+            alt="Lavish Beauty logo"
+            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD…(TRUNCATED BASE64)…"
+          />
         </div>
         <div class="brand-text">
           <strong>LAVISH BEAUTY</strong>
@@ -416,7 +419,7 @@
             <a href="#academy" class="btn btn-secondary">Enquire About Makeup Course</a>
           </div>
           <p class="hero-note">
-            One‑tap WhatsApp booking. No forms, no friction – just send the in‑built message and we confirm your slot.
+            One‑tap WhatsApp booking. No forms – just send the in‑built message and we confirm your slot.
           </p>
         </div>
 
@@ -539,81 +542,7 @@
       </div>
     </section>
 
-    <!-- WHY + TESTIMONIALS -->
-    <section class="section" id="why">
-      <div class="container">
-        <div class="section-head">
-          <span class="badge">Why clients love us</span>
-          <h2>Black‑and‑gold luxury, warm service</h2>
-          <p>
-            Lavish combines a sleek black‑and‑white aesthetic with soft behaviour, patience and detail‑obsessed artistry.
-          </p>
-        </div>
-
-        <div class="cards-grid cards-grid--2">
-          <div class="card">
-            <h3>Professional, patient team</h3>
-            <p>
-              Artists who listen first, explain options clearly and help you choose looks that suit your features,
-              outfits and comfort level.
-            </p>
-          </div>
-          <div class="card">
-            <h3>Premium, safe products</h3>
-            <p>
-              Trusted professional brands so colour lasts longer, skin feels comfortable and makeup looks fresh
-              under studio lights and phone flash.
-            </p>
-          </div>
-          <div class="card">
-            <h3>Updated techniques</h3>
-            <p>
-              Soft‑glam, skin‑finish bases, trending eye looks, structured yet soft hairstyles and nails
-              that match current bridal trends.
-            </p>
-          </div>
-          <div class="card">
-            <h3>Calm, clean atmosphere</h3>
-            <p>
-              Clean black‑and‑gold interiors, organised workstations, sanitised tools and a non‑rushed feel
-              so your appointment becomes actual self‑care time.
-            </p>
-          </div>
-        </div>
-
-        <div class="section-head" style="margin-top:3rem;">
-          <span class="badge">Client words</span>
-          <h2>Loved by Jayanagar clients</h2>
-          <p>Swap these with your actual Google reviews whenever you’re ready.</p>
-        </div>
-
-        <div class="cards-grid cards-grid--3">
-          <article class="card">
-            <h3>“Professional and friendly”</h3>
-            <p>
-              “The team understood exactly what I wanted, suggested better options and executed everything calmly.
-              The finish looked luxurious but still felt like ‘me’.”
-            </p>
-          </article>
-          <article class="card">
-            <h3>“Makeup that lasted all day”</h3>
-            <p>
-              “My bridal makeup stayed intact through tears, heat and photos. Everyone asked who did the look, and
-              the pictures came out beautifully.”
-            </p>
-          </article>
-          <article class="card">
-            <h3>“Clean, comfortable space”</h3>
-            <p>
-              “The salon is neat, the staff sanitise regularly and they are very respectful and kind. It feels safe
-              to bring family and kids here.”
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- BOOKING (WHATSAPP ONLY) -->
+    <!-- BOOKING -->
     <section class="section" id="book">
       <div class="container center">
         <div class="section-head">
